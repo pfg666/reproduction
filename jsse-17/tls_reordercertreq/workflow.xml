@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<workflowTrace>
+    <Receive>
+        <expectedMessages>
+            <ClientHello/>
+        </expectedMessages>
+    </Receive>
+    <Send>
+        <messages>
+            <ServerHello/>
+        </messages>
+    </Send>
+    <Send>
+        <messages>
+            <CertificateRequest/>
+        </messages>
+    </Send>
+    <Send>
+        <messages>
+            <Certificate/>
+        </messages>
+    </Send>
+    <Send>
+        <messages>
+            <ECDHEServerKeyExchange/>
+        </messages>
+    </Send>            
+    <Send>
+        <messages>
+            <ServerHelloDone/>
+        </messages>
+    </Send>            
+    <Receive>
+    </Receive>
+</workflowTrace>
