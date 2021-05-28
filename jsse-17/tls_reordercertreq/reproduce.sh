@@ -60,7 +60,7 @@ function setup_jsse_program() {
         solve_arch $JDK_17_ARCH_URL $JDK_17_DIR 
     fi
 
-    $JDK_17_DIR/bin/javac -s $JSSE_PROGRAM_DIR/bin/ $JSSE_PROGRAM_DIR/src/SSLSocketClientWithClientAuth.java
+    $JDK_17_DIR/bin/javac -d $JSSE_PROGRAM_DIR/bin/ $JSSE_PROGRAM_DIR/src/SSLSocketClientWithClientAuth.java
 }
 
 
